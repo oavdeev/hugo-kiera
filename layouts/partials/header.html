@@ -6,6 +6,10 @@
   <title>{{ .Site.Title }}</title>
   {{ partial "meta" . }}
   {{ partial "header_includes" . -}}
+
+  {{ if .Site.GoogleAnalytics }}
+  {{ template "_internal/google_analytics_async.html" . }}
+  {{ end }}  
 </head>
 
 <body>
@@ -31,7 +35,7 @@
         {{ end }}
       </ul>
       {{ with .Site.Params.tagline }}
-      <p><em>{{ . | markdownify }}</em></p>
+      <p><a href="{{ relURL "/" }}"><h3>{{ . | markdownify }}</h3></a></p>
       {{ end }}
     </header>
 

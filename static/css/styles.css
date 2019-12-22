@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Roboto Slab", serif;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #333333;
 }
 
@@ -13,7 +13,7 @@ h4,
 h5,
 h6,
 time {
-  font-family: "Ruda", sans-serif;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
 #container {
@@ -42,7 +42,7 @@ time {
 }
 
 #container header h1 {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
 }
 
 #container header h1 a {
@@ -160,7 +160,7 @@ time {
 
 #container main article p code {
   padding: 0.2em;
-  background-color: #ffcccc;
+ /* background-color: #ffcccc;*/
   font-size: 0.9em;
 }
 
@@ -212,7 +212,6 @@ time {
 
 a {
   color: #666666;
-  text-decoration: none;
 }
 
 .image, figure img, img {
@@ -371,4 +370,8 @@ ul.pagination {
 
 ul.pagination li {
   padding: 0 1em;
+}
+
+article li {
+  margin: 0.7em 0 0 0;
 }
